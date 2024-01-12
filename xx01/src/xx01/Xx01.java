@@ -1,0 +1,33 @@
+package xx01;
+
+
+public class Xx01 {
+
+	public static void main(String[] args) {
+		
+	
+		char c = 'a'; 
+        // i = 0 부터 25까지
+        // for 는 기간 
+        for(int i=0; i<26; i++) {          // ��{} ���� ������ 26���� �ݺ��Ѵ�. 
+                    System.out.print(c++); //'a'���� 26���� ���ڸ� ����Ѵ�. 
+        } 
+        
+        System.out.println(); // �ٹٲ��� �Ѵ�.
+
+        c = 'A'; 
+        for(int i=0; i<26; i++) {          // ��{} ���� ������ 26���� �ݺ��Ѵ�. 
+                    System.out.print(c++); //'A'���� 26���� ���ڸ� ����Ѵ�. 
+        } 
+
+        System.out.println(); 
+
+        c='0'; 
+        for(int i=0; i<10; i++) {          // ��{} ���� ������ 10���� �ݺ��Ѵ�. 
+                    System.out.print(c++); //'0'���� 10���� ���ڸ� ����Ѵ�. 
+        } 
+        System.out.println(); 
+        
+	}
+}
+
