@@ -1,22 +1,31 @@
 package main;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main{
+public class Main {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		int N = scan.nextInt();
+		int[] arr = new int[N];
 		
+
+		for (int i = 0; i < N; i++) {
+			int num = scan.nextInt();
+			arr[i] = num;}
 		
-		for(int i = 0; i < 10; i++) {
-			int A = scan.nextInt();
-			int B = scan.nextInt();
+			{Arrays.sort(arr);
+			int a = arr[0];
+			int b = arr[arr.length - 1];
 			
-			System.out.println(A+B);
 			
-					
+			System.out.println(a);
+			
+	
+		}
 			}
 		
-		}
-		
-		
+	
 	}
+
+

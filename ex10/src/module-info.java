@@ -4,5 +4,5 @@
 /**
  * 
  */
-module main {
+module ex10 {
 }
