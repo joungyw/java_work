@@ -4,5 +4,5 @@
 /**
  * 
  */
-module ex15 {
+module test {
 }
