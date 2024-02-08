@@ -37,7 +37,7 @@ public class Main {
             qdb.Q(i);
             qdb.AS(i);
 
-                int answer = sc.nextInt();
+            int answer = sc.nextInt();
             do {
                 System.out.println();
 
@@ -46,34 +46,34 @@ public class Main {
                     System.out.println(i + "번");
                     qdb.Q(i);
                     qdb.AS(i);
-                  answer = sc.nextInt();
+                    answer = sc.nextInt();
                 }
 
             } while (answer != 1 && answer != 2);
 
 
-                if (i < 4) {
-                    point.con(answer);
-                    if (i == 3) {
-                        Point.IE += Point.sum;
-                        Point.sum = 0;
-                    }
-                } else if (i < 7) {
-                    point.con(answer);
-                    if (i == 6) {
-                        Point.NS += Point.sum;
-                        Point.sum = 0;
-                    }
-                } else if (i < 10) {
-                    point.con(answer);
-                    if (i == 9) {
-                        Point.FT += Point.sum;
-                        Point.sum = 0;
-                    }
-                } else if (i < 13)
-                    point.con(answer);
-                if (i == 12)
-                    Point.JP += Point.sum;
+            if (i < 4) {
+                point.con(answer);
+                if (i == 3) {
+                    Point.IE += Point.sum;
+                    Point.sum = 0;
+                }
+            } else if (i < 7) {
+                point.con(answer);
+                if (i == 6) {
+                    Point.NS += Point.sum;
+                    Point.sum = 0;
+                }
+            } else if (i < 10) {
+                point.con(answer);
+                if (i == 9) {
+                    Point.FT += Point.sum;
+                    Point.sum = 0;
+                }
+            } else if (i < 13)
+                point.con(answer);
+            if (i == 12)
+                Point.JP += Point.sum;
         }
 
 

@@ -10,16 +10,16 @@ import org.example.util.Login;
 import java.util.Scanner;
 
 public class Main {
+    public static MemberDB md = new MemberDB();
+    //상품 관리 DB
+    public static ItemDB id = new ItemDB();
+    //장바구니 관리 DB
+    public static CartDB cd = new CartDB();
+    // 주문 관리 DB
+    public static OrdersDB od = new OrdersDB();
     public static void main(String[] args) {
 
         //회원관리 DB
-        MemberDB md = new MemberDB();
-        //상품 관리 DB
-        ItemDB id = new ItemDB();
-        //장바구니 관리 DB
-        CartDB cd = new CartDB();
-        // 주문 관리 DB
-        OrdersDB od = new OrdersDB();
 
         while (true) {
             int select = 0;
@@ -60,12 +60,16 @@ public class Main {
                         int cartSelect = printMenuCart();
                         if (cartSelect ==1){
                             cd.insert();
+                            cd.insertItem();
+
+                            //장바구니에 아이템 넣는 로직
+                            //없는 상품을 선택할시 등록 종료
+                            //아니면 상품 보여주면서 계속 상품 등록
 
                         } else if (cartSelect ==5) {
                             System.out.println("장바구니 종료");
                             break;
                         }
-
                     }
                 }else {
                     System.out.println("로그인 하셔야 장바구니 메뉴를 볼 수 있습니다.");
@@ -87,7 +91,6 @@ public class Main {
         }
 
     }
-
     public static int printMenuCart() {
         System.out.println("1.등록");
         System.out.println("2.수정");
